@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/estilos.css" />
+    <title>CALCULO DE CANTIDADES</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img id="imagen" src="./assets/img/msi.png" alt="..." />
+        <div class="card-body">
+          <h3 class="card-title">Notebook MSI</h3>
+          <input id="cantidad" type="number" placeholder="Cantidad" min="0" />
+          <input id="color" type="text" placeholder="Color" />
+          <p>Precio: $<span id="precio">400.000</span></p>
+          <button class="btn" type="button" onclick="{obtener_total()}">
+            CALCULAR TOTAL
+          </button>
+        </div>
+      </div>
+      <div class="container-result">
+        <h3>Total: $ <span id="preciofinal"></span></h3>
+        <h3>Cantidad: <span id="cantidadfinal"></span></h3>
+        <h3 id="colorfinal">
+          Color:
+          <div id="circlecolor"></div>
+        </h3>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
